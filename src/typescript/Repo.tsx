@@ -26,7 +26,7 @@ export default function Repo({ repoData }: IRepoProps) {
 
 	let repoElem = () => {
 		return (
-			<Card sx={{ m: 1, p: 1, width: "90vw" }}>
+			<Card sx={{ m: 1, p: 0, width: "100%" }}>
 				<CardContent sx={{ fontWeight: "bolder" }}>
 					{repoData.name.replaceAll("-", " ").toUpperCase()}
 				</CardContent>

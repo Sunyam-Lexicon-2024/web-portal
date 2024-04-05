@@ -45,8 +45,9 @@ export default function Github() {
 	return (
 		<Grid
 			columns={3}
+			spacing={2}
 			container
-			sx={{ position: "relative", top: 70 }}>
+			sx={{ position: "relative", mt: 10, mb: 10 }}>
 			{repos}
 		</Grid>
 	)

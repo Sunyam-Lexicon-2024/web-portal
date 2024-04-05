@@ -30,7 +30,7 @@ function ResponsiveAppBar() {
 			enableColorOnDark>
 			<Container maxWidth="xl">
 				<Toolbar disableGutters>
-					<GitHubIcon sx={{ display: { xs: "flex", md: "none" }, mr: 1 }} />
+					<GitHubIcon sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} />
 					<Typography
 						variant="h6"
 						noWrap
