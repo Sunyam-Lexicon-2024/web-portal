@@ -11,7 +11,7 @@ import Button from "@mui/material/Button"
 import MenuItem from "@mui/material/MenuItem"
 import AdbIcon from "@mui/icons-material/Adb"
 
-const pages = ["Projects", "About", "Stats"] 
+const pages = ["Projects", "About", "Stats"]
 
 function ResponsiveAppBar() {
 	const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(null)
@@ -99,7 +99,7 @@ function ResponsiveAppBar() {
 							color: "inherit",
 							textDecoration: "none",
 						}}>
-						LOGO
+						Lexicon 2024 Portal
 					</Typography>
 					<Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
 						{pages.map((page) => (

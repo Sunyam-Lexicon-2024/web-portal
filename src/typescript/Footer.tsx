@@ -19,7 +19,7 @@ export default function Footer() {
 				width: "100vw",
 			}}>
 			<Box component={"span"}>
-				design by <a style={{textDecoration: "none", color: linkColor}} href=""> suny-am</a> {year}
+				Design by <a style={{textDecoration: "none", color: linkColor}} href="https://github.com/suny-am"> suny-am</a> {year}
 			</Box>
 		</Box>
 	)

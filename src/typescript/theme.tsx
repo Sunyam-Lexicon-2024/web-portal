@@ -1,10 +1,10 @@
 import { createTheme } from "@mui/material"
-import { red, purple } from "@mui/material/colors"
+import { red } from "@mui/material/colors"
 
 export const theme = createTheme({
 	palette: {
 		primary: {
-			main: red[500],
+			main: red["A200"],
 		},
 		secondary: {
 			main: red[100],
