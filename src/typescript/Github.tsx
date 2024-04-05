@@ -14,14 +14,20 @@ export default function Github() {
 	}, [])
 
 	async function GetGithubRepos() {
-		let response = await octokit.request(
-			"GET /orgs/sunyam-lexicon-2024/repos",
-			{}
-		)
+		await octokit
+			.request("GET /orgs/sunyam-lexicon-2024/repos", {
+				/* anonymous fetch for now*/
+			})
+			.then((response) => AssembleRepos(response.data))
+			.catch(() => {
+				GetLocalData()
+			})
+	}
 
-		let repoData = await response.data
-
-		AssembleRepos(repoData)
+	async function GetLocalData() {
+		await fetch("repos.json")
+			.then((response) => AssembleRepos(response.json()))
+			.catch((error) => console.error("Could not fetch data", error))
 	}
 
 	async function AssembleRepos(repoData: OctokitResponse<any, number>["data"]) {
