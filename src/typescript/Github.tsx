@@ -16,9 +16,7 @@ export default function Github() {
 	async function GetGithubRepos() {
 		let response = await octokit.request(
 			"GET /orgs/sunyam-lexicon-2024/repos",
-			{
-				
-			}
+			{}
 		)
 
 		let repoData = await response.data
@@ -27,8 +25,6 @@ export default function Github() {
 	}
 
 	async function AssembleRepos(repoData: OctokitResponse<any, number>["data"]) {
-	
-
 		let repoElems = await repoData.map((repo: any, index: number) => {
 			return (
 				<Repo
