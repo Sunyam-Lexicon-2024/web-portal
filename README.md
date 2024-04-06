@@ -5,7 +5,7 @@
 A web portal that aggregates repository information from the Github organization [Sunyam-Lexicon-2024](https://github.com/sunyam-lexicon-2024)
 
 ## Site
-[Netlify Link](https://sunyam-lexicon-2024.netlify.app/)
+[Github Pages Link](https://sunyam-lexicon-2024.github.io/web-portal/)
 
 ## Technology
 
