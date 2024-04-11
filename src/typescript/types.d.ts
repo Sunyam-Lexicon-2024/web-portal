@@ -13,16 +13,29 @@ interface IRepositoryData
     }
 }
 
-interface IDefaultBranchRef {
+interface RepoElement extends React.ElementType
+{
+    props: IRepositoryData
+}
+
+interface IFilterUpdate
+{
+    filterUpdate: (f: string) => void
+}
+
+interface IDefaultBranchRef
+{
     name: string
     target: ITarget
 }
 
-interface ITarget {
+interface ITarget
+{
     history: IHistory
 }
 
-interface IHistory {
+interface IHistory
+{
     totalCount: number
 }
 

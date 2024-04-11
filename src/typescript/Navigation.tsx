@@ -14,10 +14,9 @@ import TextField from "@mui/material/TextField"
 
 const pages = ["Projects", "About", "Stats"]
 
-function ResponsiveAppBar()
+function ResponsiveAppBar({ filterUpdate }: IFilterUpdate)
 {
 	const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(null)
-	const [filter, setFilter] = React.useState<undefined | string>("")
 
 	const handleOpenNavMenu = (event: React.MouseEvent<HTMLElement>) =>
 	{
@@ -27,12 +26,6 @@ function ResponsiveAppBar()
 	const handleCloseNavMenu = () =>
 	{
 		setAnchorElNav(null)
-	}
-
-	const logFilter = (filterContent: string) =>
-	{
-		setFilter(filterContent)
-		console.log(filterContent)
 	}
 
 	return (
@@ -124,7 +117,7 @@ function ResponsiveAppBar()
 						))}
 					</Box>
 					<Box sx={{ flexGrow: 0, display: { xs: "none", md: "flex" } }}>
-						<TextField label="filter" size="small" color="secondary" value={filter} onChange={(e) => logFilter(e.target.value)} />
+						<TextField label="filter" size="small" color="secondary" onChange={(e) => filterUpdate(e.target.value)} />
 					</Box>
 				</Toolbar>
 			</Container>
