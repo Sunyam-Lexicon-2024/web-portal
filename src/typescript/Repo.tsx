@@ -16,8 +16,6 @@ export default function Repo({ repository }: IRepositoryData)
 		return diskUsage + " KB"
 	}
 
-	console.debug(repository.diskUsage / 1000 > 1)
-
 	const repoElem = () =>
 	{
 		return (
@@ -32,6 +30,12 @@ export default function Repo({ repository }: IRepositoryData)
 					<span>
 						<strong>Last updated:{" "}</strong>
 						{new Date(repository.pushedAt).toLocaleDateString("en-US", dateTimeOptions)}
+					</span>
+				</CardContent>
+				<CardContent>
+					<span>
+						<strong>Commit count:{" "}</strong>
+						{repository.defaultBranchRef.target.history.totalCount}
 					</span>
 				</CardContent>
 				<CardContent>

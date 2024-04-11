@@ -10,25 +10,36 @@ import Container from "@mui/material/Container"
 import Button from "@mui/material/Button"
 import MenuItem from "@mui/material/MenuItem"
 import GitHubIcon from "@mui/icons-material/GitHub"
+import TextField from "@mui/material/TextField"
 
 const pages = ["Projects", "About", "Stats"]
 
-function ResponsiveAppBar() {
+function ResponsiveAppBar()
+{
 	const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(null)
+	const [filter, setFilter] = React.useState<undefined | string>("")
 
-	const handleOpenNavMenu = (event: React.MouseEvent<HTMLElement>) => {
+	const handleOpenNavMenu = (event: React.MouseEvent<HTMLElement>) =>
+	{
 		setAnchorElNav(event.currentTarget)
 	}
 
-	const handleCloseNavMenu = () => {
+	const handleCloseNavMenu = () =>
+	{
 		setAnchorElNav(null)
+	}
+
+	const logFilter = (filterContent: string) =>
+	{
+		setFilter(filterContent)
+		console.log(filterContent)
 	}
 
 	return (
 		<AppBar
 			position="fixed"
 			enableColorOnDark>
-			<Container maxWidth="xl">
+			<Container maxWidth="xxl">
 				<Toolbar disableGutters>
 					<GitHubIcon sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} />
 					<Typography
@@ -111,6 +122,9 @@ function ResponsiveAppBar() {
 								{page}
 							</Button>
 						))}
+					</Box>
+					<Box sx={{ flexGrow: 0, display: { xs: "none", md: "flex" } }}>
+						<TextField label="filter" size="small" color="secondary" value={filter} onChange={(e) => logFilter(e.target.value)} />
 					</Box>
 				</Toolbar>
 			</Container>
