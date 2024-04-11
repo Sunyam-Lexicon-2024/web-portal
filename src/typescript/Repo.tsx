@@ -1,44 +1,60 @@
-import { Card, CardContent, Grid } from "@mui/material"
-import { useEffect, useState } from "react"
+import { Box, Button, Card, CardContent, Grid } from "@mui/material"
+import { theme } from "./theme"
 
-export default function Repo({ repoData }: IRepoProps) {
-	const [pagesURL, setPagesURL] = useState<string | null>(null)
+const linkColor = theme.palette.secondary.main
 
-	useEffect(() => {
-		if (repoData.has_pages) {
-			LoadPagesData()
+const dateTimeOptions = { year: "numeric", month: "numeric", day: "numeric", hour: "numeric", minute: "numeric", } as DateTimeFormatOptions
+
+export default function Repo({ repository }: IRepositoryData)
+{
+	const formatDiskUsage = (diskUsage: number) =>
+	{
+		if (diskUsage / 1000 > 1)
+		{
+			return (repository.diskUsage / 1000) + " MB"
 		}
-	}, [])
-
-	async function LoadPagesData() {
-		let data = (await fetch("pages.json")
-			.then((response) => response.json())
-			.catch((error) =>
-				console.error("Error fetching JSON:", error)
-			)) as IPagesProps[]
-
-		let match = data.find((d) => {
-			return d.html_url?.match(repoData.name)
-		})
-
-		if (match) setPagesURL(match.html_url)
+		return diskUsage + " KB"
 	}
 
-	let repoElem = () => {
+	console.debug(repository.diskUsage / 1000 > 1)
+
+	const repoElem = () =>
+	{
 		return (
 			<Card sx={{ m: 1, p: 0, width: "90vw" }}>
 				<CardContent sx={{ fontWeight: "bolder" }}>
-					{repoData.name.replaceAll("-", " ").toUpperCase()}
+					{repository.name.replaceAll("-", " ").toUpperCase()}
 				</CardContent>
 				<CardContent>
-					<a href={repoData.html_url}>Github Link</a>
+					{repository.description}
 				</CardContent>
-				{pagesURL ? (
+				<CardContent>
+					<span>
+						<strong>Last updated:{" "}</strong>
+						{new Date(repository.pushedAt).toLocaleDateString("en-US", dateTimeOptions)}
+					</span>
+				</CardContent>
+				<CardContent>
+					<span>
+						<strong>Disk usage:{" "}</strong>
+						{formatDiskUsage(repository.diskUsage)}
+					</span>
+				</CardContent>
+				<Box sx={{ display: "flex" }}>
 					<CardContent>
-						<a href={pagesURL}>Website</a>
+						<Button variant="contained">
+							<a style={{ textDecoration: "none", color: linkColor }} href={repository.url}>Github Link</a>
+						</Button>
 					</CardContent>
-				) : null}
-			</Card>
+					{repository.homepageUrl ? (
+						<CardContent>
+							<Button variant="contained">
+								<a style={{ textDecoration: "none", color: linkColor }} href={repository.homepageUrl}>Website</a>
+							</Button>
+						</CardContent>
+					) : null}
+				</Box>
+			</Card >
 		)
 	}
 

@@ -1,0 +1,192 @@
+[
+  {
+    "repository": {
+      "name": "mvc-1",
+      "url": "https://github.com/Sunyam-Lexicon-2024/mvc-1",
+      "homepageUrl": "",
+      "pushedAt": "2024-04-10T12:39:46Z",
+      "diskUsage": 31796,
+      "description": "A basic ASP.NET Core 8.0 MVC application",
+      "defaultBranchRef": {
+        "name": "main",
+        "target": {
+          "oid": "8e31d17034484033691a82807d116cbfa491729e",
+          "history": {
+            "totalCount": 12
+          }
+        }
+      }
+    }
+  },
+  {
+    "repository": {
+      "name": "frontend-api",
+      "url": "https://github.com/Sunyam-Lexicon-2024/frontend-api",
+      "homepageUrl": "https://sunyam-lexicon-2024.github.io/frontend-api/",
+      "pushedAt": "2024-04-10T07:28:11Z",
+      "diskUsage": 164,
+      "description": "A small frontend to test API interaction",
+      "defaultBranchRef": {
+        "name": "main",
+        "target": {
+          "oid": "2b5d36f87b18618f6a5ea492c2a57c0c8b9b6741",
+          "history": {
+            "totalCount": 13
+          }
+        }
+      }
+    }
+  },
+  {
+    "repository": {
+      "name": "personell-registry-app",
+      "url": "https://github.com/Sunyam-Lexicon-2024/personell-registry-app",
+      "homepageUrl": "",
+      "pushedAt": "2024-04-10T07:30:34Z",
+      "diskUsage": 3,
+      "description": "A small application built to simulate registration of personell",
+      "defaultBranchRef": {
+        "name": "main",
+        "target": {
+          "oid": "2ecb99e921bda1e888424dbb646d76e2c16ce7af",
+          "history": {
+            "totalCount": 2
+          }
+        }
+      }
+    }
+  },
+  {
+    "repository": {
+      "name": "oop-basics-extras-1",
+      "url": "https://github.com/Sunyam-Lexicon-2024/oop-basics-extras-1",
+      "homepageUrl": "",
+      "pushedAt": "2024-04-10T07:34:10Z",
+      "diskUsage": 3,
+      "description": "Some small extra tests for OOP in C#",
+      "defaultBranchRef": {
+        "name": "main",
+        "target": {
+          "oid": "d97687a4689e82d946581ccc7d3403fc5a3740e2",
+          "history": {
+            "totalCount": 3
+          }
+        }
+      }
+    }
+  },
+  {
+    "repository": {
+      "name": "memory-management",
+      "url": "https://github.com/Sunyam-Lexicon-2024/memory-management",
+      "homepageUrl": "",
+      "pushedAt": "2024-04-10T07:32:32Z",
+      "diskUsage": 64,
+      "description": "A small exercise in C# memory management",
+      "defaultBranchRef": {
+        "name": "main",
+        "target": {
+          "oid": "34a78b3397d26cc5c446b084fe57ec07c1087ca4",
+          "history": {
+            "totalCount": 3
+          }
+        }
+      }
+    }
+  },
+  {
+    "repository": {
+      "name": "oop-basics-extras-2",
+      "url": "https://github.com/Sunyam-Lexicon-2024/oop-basics-extras-2",
+      "homepageUrl": "",
+      "pushedAt": "2024-04-10T07:34:29Z",
+      "diskUsage": 7,
+      "description": "Some small extra tests for OOP in C#, part deux!",
+      "defaultBranchRef": {
+        "name": "main",
+        "target": {
+          "oid": "c033cb310cf98868746b907851908d3a201ac020",
+          "history": {
+            "totalCount": 3
+          }
+        }
+      }
+    }
+  },
+  {
+    "repository": {
+      "name": "frontend-javascript",
+      "url": "https://github.com/Sunyam-Lexicon-2024/frontend-javascript",
+      "homepageUrl": "https://sunyam-lexicon-2024.github.io/frontend-javascript/",
+      "pushedAt": "2024-04-10T07:28:48Z",
+      "diskUsage": 309,
+      "description": "A small frontend to test JavaScript",
+      "defaultBranchRef": {
+        "name": "main",
+        "target": {
+          "oid": "6abe119a477c4fd0a8a9dd122b244d0b401510e9",
+          "history": {
+            "totalCount": 24
+          }
+        }
+      }
+    }
+  },
+  {
+    "repository": {
+      "name": "garage-1.0",
+      "url": "https://github.com/Sunyam-Lexicon-2024/garage-1.0",
+      "homepageUrl": "",
+      "pushedAt": "2024-04-10T07:29:59Z",
+      "diskUsage": 2318,
+      "description": "A small application built in .NET to simulate databaes operations on a hypothetical set of garages and their contained vehicles",
+      "defaultBranchRef": {
+        "name": "main",
+        "target": {
+          "oid": "8166deb189be9e2af662d3c46b1bd9e86523b4a8",
+          "history": {
+            "totalCount": 5
+          }
+        }
+      }
+    }
+  },
+  {
+    "repository": {
+      "name": "oop-basics",
+      "url": "https://github.com/Sunyam-Lexicon-2024/oop-basics",
+      "homepageUrl": "",
+      "pushedAt": "2024-04-10T07:33:45Z",
+      "diskUsage": 7,
+      "description": "Some small extra tests for OOP in C#",
+      "defaultBranchRef": {
+        "name": "main",
+        "target": {
+          "oid": "ea96332bb05da9b41b999933ff9f5d190e7fbf37",
+          "history": {
+            "totalCount": 3
+          }
+        }
+      }
+    }
+  },
+  {
+    "repository": {
+      "name": "frontend-html-css",
+      "url": "https://github.com/Sunyam-Lexicon-2024/frontend-html-css",
+      "homepageUrl": "https://sunyam-lexicon-2024.github.io/frontend-html-css/",
+      "pushedAt": "2024-04-10T07:29:12Z",
+      "diskUsage": 41,
+      "description": "A small frontend to test HTML + CSS",
+      "defaultBranchRef": {
+        "name": "main",
+        "target": {
+          "oid": "2edb1cdfc26095bee536041cf9c95b9b66f77792",
+          "history": {
+            "totalCount": 9
+          }
+        }
+      }
+    }
+  }
+]

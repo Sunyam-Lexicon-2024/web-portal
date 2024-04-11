@@ -1,13 +1,29 @@
-interface IRepoProps
+interface IRepositoryData
 {
-    repoData:
+    repository:
     {
-        name: string,
-        html_url: string,
-        has_pages: boolean
+        defaultBranchRef: IDefaultBranchRef,
+        diskUsage: number
+        homepageUrl: string
+        name: string
+        url: string,
+        pushedAt: string
         description: string
         // TBD
     }
+}
+
+interface IDefaultBranchRef {
+    name: string
+    target: ITarget
+}
+
+interface ITarget {
+    history: IHistory
+}
+
+interface IHistory {
+    totalCount: number
 }
 
 interface IPagesProps
