@@ -12,7 +12,21 @@ import MenuItem from "@mui/material/MenuItem"
 import GitHubIcon from "@mui/icons-material/GitHub"
 import TextField from "@mui/material/TextField"
 
-const pages = ["Projects", "About", "Stats"]
+const pages = [
+	{
+		title: "Projects",
+		href: "https://github.com/orgs/Sunyam-Lexicon-2024/projects"
+	},
+	{
+		title: "About",
+		href: "https://github.com/Sunyam-Lexicon-2024"
+	},
+	{
+		title: "Repositories",
+		href: "https://github.com/orgs/Sunyam-Lexicon-2024/repositories"
+	}
+]
+
 
 function ResponsiveAppBar({ filterUpdate }: IFilterUpdate)
 {
@@ -81,9 +95,10 @@ function ResponsiveAppBar({ filterUpdate }: IFilterUpdate)
 							}}>
 							{pages.map((page) => (
 								<MenuItem
-									key={page}
+									key={page.title}
 									onClick={handleCloseNavMenu}>
-									<Typography textAlign="center">{page}</Typography>
+									<Typography textAlign="center">
+										<a href={page.href} style={{ textDecoration: "none", color: "black" }}>{page.title}</a></Typography>
 								</MenuItem>
 							))}
 						</Menu>
@@ -109,10 +124,10 @@ function ResponsiveAppBar({ filterUpdate }: IFilterUpdate)
 					<Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
 						{pages.map((page) => (
 							<Button
-								key={page}
+								key={page.title}
 								onClick={handleCloseNavMenu}
 								sx={{ my: 2, color: "black", display: "block" }}>
-								{page}
+								<a style={{ textDecoration: "none", color: "black" }} href={page.href}>{page.title}</a>
 							</Button>
 						))}
 					</Box>
