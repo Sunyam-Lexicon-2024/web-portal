@@ -5,14 +5,25 @@ import Navigation from "./Navigation"
 import Github from "./Github"
 import Footer from "./Footer"
 import RepositoryFactory from "./RepositoryFactory"
-import { useState } from "react"
+import { Dispatch, SetStateAction, useEffect, useRef, useState } from "react"
 
 const repoFactory = new RepositoryFactory()
-const repoData = await repoFactory.GetGithubRepos() as RepoElement[]
 
 export default function App()
 {
-	const [repos, setRepos] = useState(repoData)
+	const [repos, setRepos] = useState([] as RepoElement[]) as [RepoElement[], Dispatch<SetStateAction<RepoElement[]>>]
+
+	const repoData = useRef([] as RepoElement[])
+
+	useEffect(() =>
+	{
+		async function getData()
+		{
+			repoData.current = await repoFactory.GetGithubRepos()
+			setRepos(repoData.current)
+		}
+		getData()
+	}, [])
 
 	const updateFilter = (filterContent: string) =>
 	{
@@ -23,10 +34,10 @@ export default function App()
 	{
 		if (filterContent.length == 0)
 		{
-			setRepos(repoData)
+			setRepos(repoData.current)
 		} else
 		{
-			const filteredRepoData = repoData.filter((r: RepoElement) =>
+			const filteredRepoData = repoData.current.filter((r: RepoElement) =>
 			{
 				return r.props.repository.name.match(filterContent)
 			})

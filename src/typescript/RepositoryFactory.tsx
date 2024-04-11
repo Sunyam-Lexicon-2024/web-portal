@@ -5,20 +5,13 @@ export default class RepositoryFactory
 	public async GetGithubRepos()
 	{
 		// TBD secure fetch with token from Azure Function Token Provider
-		const repoJson: IRepositoryData[] = await fetch("web-portal/repositories.json")
+		const repoJson: IRepositoryData[] = await fetch("repositories.json")
 			.then(async (response) => response.json())
-			.catch(() =>
+			.catch((error) =>
 			{
-				this.GetLocalData()
+				console.log(error)
 			})
 		return this.AssembleRepos(repoJson)
-	}
-
-	private async GetLocalData()
-	{
-		await fetch("repositories.json")
-			.then(async (response) => this.AssembleRepos(await response.json()))
-			.catch((error) => console.error("Could not fetch data", error))
 	}
 
 	private async AssembleRepos(repoData: IRepositoryData[])
