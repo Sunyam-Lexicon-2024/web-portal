@@ -1,9 +1,10 @@
 {
-	"name": "Node.js & TypeScript",
+	"name": "Sunyam Lexicon 2024 Web Portal",
 	"image": "mcr.microsoft.com/devcontainers/typescript-node:1-20-bullseye",
 	"containerEnv": {
 		"HOME": "/home/node"
 	},
+	"postStartCommand": "bun i",
 	"runArgs": ["--env-file",".env"],
 	"customizations": {
 		"vscode": {

@@ -4,15 +4,15 @@
       "name": "mvc-1",
       "url": "https://github.com/Sunyam-Lexicon-2024/mvc-1",
       "homepageUrl": "",
-      "pushedAt": "2024-04-10T12:39:46Z",
-      "diskUsage": 31796,
+      "pushedAt": "2024-04-13T16:21:11Z",
+      "diskUsage": 31801,
       "description": "A basic ASP.NET Core 8.0 MVC application",
       "defaultBranchRef": {
         "name": "main",
         "target": {
-          "oid": "8e31d17034484033691a82807d116cbfa491729e",
+          "oid": "14ae70323eb70331f38f155f00b7135247ce7e7e",
           "history": {
-            "totalCount": 12
+            "totalCount": 15
           }
         }
       }
@@ -70,6 +70,25 @@
           "oid": "d97687a4689e82d946581ccc7d3403fc5a3740e2",
           "history": {
             "totalCount": 3
+          }
+        }
+      }
+    }
+  },
+  {
+    "repository": {
+      "name": ".github",
+      "url": "https://github.com/Sunyam-Lexicon-2024/.github",
+      "homepageUrl": null,
+      "pushedAt": "2024-04-11T12:50:08Z",
+      "diskUsage": 2,
+      "description": "Organization Resources Repository",
+      "defaultBranchRef": {
+        "name": "main",
+        "target": {
+          "oid": "784dca0bb3dcbd175414ce5386391390ad973127",
+          "history": {
+            "totalCount": 2
           }
         }
       }
@@ -165,25 +184,6 @@
           "oid": "ea96332bb05da9b41b999933ff9f5d190e7fbf37",
           "history": {
             "totalCount": 3
-          }
-        }
-      }
-    }
-  },
-  {
-    "repository": {
-      "name": "frontend-html-css",
-      "url": "https://github.com/Sunyam-Lexicon-2024/frontend-html-css",
-      "homepageUrl": "https://sunyam-lexicon-2024.github.io/frontend-html-css/",
-      "pushedAt": "2024-04-10T07:29:12Z",
-      "diskUsage": 41,
-      "description": "A small frontend to test HTML + CSS",
-      "defaultBranchRef": {
-        "name": "main",
-        "target": {
-          "oid": "2edb1cdfc26095bee536041cf9c95b9b66f77792",
-          "history": {
-            "totalCount": 9
           }
         }
       }
