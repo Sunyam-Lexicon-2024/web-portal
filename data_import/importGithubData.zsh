@@ -11,4 +11,11 @@ data=$(jq -n \
 # Send query request
 response=$(curl -s -H "Authorization: bearer $token" -d "$data" https://api.github.com/graphql)
 
-echo $response | jq '.data.search | to_entries | .[1].value | map(.repository = .node | del(.node)) ' > ../public/repositories.json
+echo $response | jq '.data.search |
+                    to_entries | 
+                    .[1].value | 
+                    map(.repository = .node | 
+                    del(.node)) | 
+                    map(.repository) | 
+                    map(.commitTotal = .defaultBranchRef.target.history.totalCount | 
+                    del(.defaultBranchRef) ) ' > ../public/repositories.json

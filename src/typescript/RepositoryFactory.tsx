@@ -5,17 +5,29 @@ export default class RepositoryFactory
 	public async GetGithubRepos()
 	{
 
-		const cosmosData = await fetch("https://cosmos-data-provider-stage.azurewebsites.net/api/data")
+		const endpoint = "https://cosmos-data-provider.azurewebsites.net/api/data"
+		const localEndpoint = "repositories.json"
 
-		console.debug(cosmosData)
-
-		const repoJson: IRepositoryData[] = await fetch("repositories.json")
-			.then(async (response) => response.json())
-			.catch((error) =>
-			{
-				console.log(error)
-			})
-		return this.AssembleRepos(repoJson)
+		try
+		{
+			const cosmosData = await fetch(endpoint)
+				.then((response) => response.json())
+				.catch((error) =>
+				{
+					console.log(error)
+				})
+			return this.AssembleRepos(cosmosData)
+		}
+		catch
+		{
+			const repoJson = await fetch(localEndpoint, { mode: "no-cors" })
+				.then(async (response) => response.json())
+				.catch((error) =>
+				{
+					console.log(error)
+				})
+			return this.AssembleRepos(repoJson)
+		}
 	}
 
 	private async AssembleRepos(repoData: IRepositoryData[])
@@ -25,7 +37,13 @@ export default class RepositoryFactory
 			return (
 				<Repo
 					key={`Repo-${index}`}
-					repository={repo.repository}
+					name={repo.name}
+					description={repo.description}
+					url={repo.url}
+					pushedAt={repo.pushedAt}
+					homepageUrl={repo.homepageUrl}
+					diskUsage={repo.diskUsage}
+					commitTotal={repo.commitTotal}
 				/>
 			)
 		})

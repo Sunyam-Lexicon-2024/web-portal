@@ -1,16 +1,13 @@
 interface IRepositoryData
 {
-    repository:
-    {
-        defaultBranchRef: IDefaultBranchRef,
-        diskUsage: number
-        homepageUrl: string
-        name: string
-        url: string,
-        pushedAt: string
-        description: string
-        // TBD
-    }
+    commitTotal: number
+    diskUsage: number
+    homepageUrl: string
+    name: string
+    url: string,
+    pushedAt: string
+    description: string
+    // TBD
 }
 
 interface RepoElement extends React.ElementType

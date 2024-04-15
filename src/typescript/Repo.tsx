@@ -5,13 +5,13 @@ const linkColor = theme.palette.secondary.main
 
 const dateTimeOptions = { year: "numeric", month: "numeric", day: "numeric", hour: "numeric", minute: "numeric", } as DateTimeFormatOptions
 
-export default function Repo({ repository }: IRepositoryData)
+export default function Repo({ name, description, url, pushedAt, homepageUrl, diskUsage, commitTotal }: IRepositoryData)
 {
 	const formatDiskUsage = (diskUsage: number) =>
 	{
 		if (diskUsage / 1000 > 1)
 		{
-			return (repository.diskUsage / 1000) + " MB"
+			return (diskUsage / 1000) + " MB"
 		}
 		return diskUsage + " KB"
 	}
@@ -21,39 +21,39 @@ export default function Repo({ repository }: IRepositoryData)
 		return (
 			<Card sx={{ m: 1, p: 0, width: "90vw" }}>
 				<CardContent sx={{ fontWeight: "bolder" }}>
-					{repository.name.replaceAll("-", " ").toUpperCase()}
+					{name.replaceAll("-", " ").toUpperCase()}
 				</CardContent>
 				<CardContent>
-					{repository.description}
+					{description}
 				</CardContent>
 				<CardContent>
 					<span>
 						<strong>Last updated:{" "}</strong>
-						{new Date(repository.pushedAt).toLocaleDateString("en-US", dateTimeOptions)}
+						{new Date(pushedAt).toLocaleDateString("en-US", dateTimeOptions)}
 					</span>
 				</CardContent>
 				<CardContent>
 					<span>
 						<strong>Commit count:{" "}</strong>
-						{repository.defaultBranchRef.target.history.totalCount}
+						{commitTotal}
 					</span>
 				</CardContent>
 				<CardContent>
 					<span>
 						<strong>Disk usage:{" "}</strong>
-						{formatDiskUsage(repository.diskUsage)}
+						{formatDiskUsage(diskUsage)}
 					</span>
 				</CardContent>
 				<Box sx={{ display: "flex" }}>
 					<CardContent>
 						<Button variant="contained">
-							<a style={{ textDecoration: "none", color: linkColor }} href={repository.url}>Github Link</a>
+							<a style={{ textDecoration: "none", color: linkColor }} href={url}>Github Link</a>
 						</Button>
 					</CardContent>
-					{repository.homepageUrl ? (
+					{homepageUrl ? (
 						<CardContent>
 							<Button variant="contained">
-								<a style={{ textDecoration: "none", color: linkColor }} href={repository.homepageUrl}>Website</a>
+								<a style={{ textDecoration: "none", color: linkColor }} href={homepageUrl}>Website</a>
 							</Button>
 						</CardContent>
 					) : null}
