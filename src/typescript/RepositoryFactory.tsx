@@ -4,7 +4,11 @@ export default class RepositoryFactory
 {
 	public async GetGithubRepos()
 	{
-		// TBD secure fetch with token from Azure Function Token Provider
+
+		const cosmosData = await fetch("https://cosmos-data-provider-stage.azurewebsites.net/api/data")
+
+		console.debug(cosmosData)
+
 		const repoJson: IRepositoryData[] = await fetch("repositories.json")
 			.then(async (response) => response.json())
 			.catch((error) =>

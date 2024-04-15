@@ -4,15 +4,15 @@
       "name": "mvc-1",
       "url": "https://github.com/Sunyam-Lexicon-2024/mvc-1",
       "homepageUrl": "",
-      "pushedAt": "2024-04-13T16:21:11Z",
-      "diskUsage": 31801,
+      "pushedAt": "2024-04-15T07:50:59Z",
+      "diskUsage": 31802,
       "description": "A basic ASP.NET Core 8.0 MVC application",
       "defaultBranchRef": {
         "name": "main",
         "target": {
-          "oid": "14ae70323eb70331f38f155f00b7135247ce7e7e",
+          "oid": "3a7b2dc311e5d20891871e8377409ceecf79cda3",
           "history": {
-            "totalCount": 15
+            "totalCount": 16
           }
         }
       }
@@ -158,7 +158,7 @@
       "homepageUrl": "",
       "pushedAt": "2024-04-10T07:29:59Z",
       "diskUsage": 2318,
-      "description": "A small application built in .NET to simulate databaes operations on a hypothetical set of garages and their contained vehicles",
+      "description": "A small application for handling registration, deregistration and data of Vehicles stored in select Garages.",
       "defaultBranchRef": {
         "name": "main",
         "target": {
