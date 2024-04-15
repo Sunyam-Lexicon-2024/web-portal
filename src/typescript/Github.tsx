@@ -1,6 +1,6 @@
 import { Grid } from "@mui/material"
 
-export default function Github({repos})
+export default function Github({ repos })
 {
 	return (
 		<Grid

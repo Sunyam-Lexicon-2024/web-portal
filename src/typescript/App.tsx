@@ -1,4 +1,4 @@
-import { CssBaseline } from "@mui/material"
+import { CssBaseline, Skeleton, Grid } from "@mui/material"
 import { ThemeProvider } from "@emotion/react"
 import { theme } from "./theme"
 import Navigation from "./Navigation"
@@ -39,17 +39,50 @@ export default function App()
 		{
 			const filteredRepoData = repoData.current.filter((r: RepoElement) =>
 			{
-				return r.props.repository.name.match(filterContent)
+				return r.props.name.match(filterContent)
 			})
 			setRepos(filteredRepoData)
 		}
 	}
 
+	const dataPlaceHolder = <Grid
+		container
+		sx={{ position: "relative", mt: 10, }}
+		spacing={1} direction={"row"}>
+		<Grid item xs={12} md={4} sx={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
+			<Skeleton variant="rounded" sx={{ width: { xs: "90vw", md: "30vw" }, height: "50vh" }} />
+		</Grid>
+		<Grid item xs={12} md={4} sx={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
+			<Skeleton variant="rounded" sx={{ width: { xs: "90vw", md: "30vw" }, height: "50vh" }} />
+		</Grid>
+		<Grid item xs={12} md={4} sx={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
+			<Skeleton variant="rounded" sx={{ width: { xs: "90vw", md: "30vw" }, height: "50vh" }} />
+		</Grid>
+		<Grid item xs={12} md={4} sx={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
+			<Skeleton variant="rounded" sx={{ width: { xs: "90vw", md: "30vw" }, height: "50vh" }} />
+		</Grid>
+		<Grid item xs={12} md={4} sx={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
+			<Skeleton variant="rounded" sx={{ width: { xs: "90vw", md: "30vw" }, height: "50vh" }} />
+		</Grid>
+		<Grid item xs={12} md={4} sx={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
+			<Skeleton variant="rounded" sx={{ width: { xs: "90vw", md: "30vw" }, height: "50vh" }} />
+		</Grid>
+		<Grid item xs={12} md={4} sx={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
+			<Skeleton variant="rounded" sx={{ width: { xs: "90vw", md: "30vw" }, height: "50vh" }} />
+		</Grid>
+		<Grid item xs={12} md={4} sx={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
+			<Skeleton variant="rounded" sx={{ width: { xs: "90vw", md: "30vw" }, height: "50vh" }} />
+		</Grid>
+		<Grid item xs={12} md={4} sx={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
+			<Skeleton variant="rounded" sx={{ width: { xs: "90vw", md: "30vw" }, height: "50vh" }} />
+		</Grid>
+	</Grid>
+
 	return (
 		<ThemeProvider theme={theme}>
 			<CssBaseline />
 			<Navigation filterUpdate={(e: string) => updateFilter(e)} />
-			<Github repos={repos} />
+			{repos.length > 0 ? <Github repos={repos} /> : dataPlaceHolder}
 			<Footer></Footer>
 		</ThemeProvider>
 	)
