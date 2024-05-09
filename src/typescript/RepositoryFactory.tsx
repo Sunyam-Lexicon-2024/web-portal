@@ -4,30 +4,21 @@ export default class RepositoryFactory
 {
 	public async GetGithubRepos()
 	{
-
 		const endpoint = "https://cosmos-data-provider.azurewebsites.net/api/data"
-		const localEndpoint = "repositories.json"
+		const json = await fetch(endpoint)
+			.then(async (response) => await response.json())
+			.catch(async () => await this.GetLocalData())
 
-		try
-		{
-			const cosmosData = await fetch(endpoint)
-				.then((response) => response.json())
-				.catch((error) =>
-				{
-					console.log(error)
-				})
-			return this.AssembleRepos(cosmosData)
-		}
-		catch
-		{
-			const repoJson = await fetch(localEndpoint, { mode: "no-cors" })
-				.then(async (response) => response.json())
-				.catch((error) =>
-				{
-					console.log(error)
-				})
-			return this.AssembleRepos(repoJson)
-		}
+		const data = await this.AssembleRepos(json)
+		return data
+	}
+
+	private async GetLocalData(): Promise<IRepositoryData[]>
+	{
+		const localEndpoint = "repositories.json"
+		return await fetch(localEndpoint, { mode: "no-cors" })
+			.then(async (response) => response.json())
+			.catch(() => [])
 	}
 
 	private async AssembleRepos(repoData: IRepositoryData[])

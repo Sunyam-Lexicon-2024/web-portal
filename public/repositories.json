@@ -3,10 +3,10 @@
     "name": "mvc-1",
     "url": "https://github.com/Sunyam-Lexicon-2024/mvc-1",
     "homepageUrl": "",
-    "pushedAt": "2024-04-15T07:50:59Z",
-    "diskUsage": 31802,
+    "pushedAt": "2024-05-18T07:52:19Z",
+    "diskUsage": 31805,
     "description": "A basic ASP.NET Core 8.0 MVC application",
-    "commitTotal": 16
+    "commitTotal": 17
   },
   {
     "name": "frontend-api",
@@ -27,6 +27,33 @@
     "commitTotal": 2
   },
   {
+    "name": "garage-2.0",
+    "url": "https://github.com/Sunyam-Lexicon-2024/garage-2.0",
+    "homepageUrl": "",
+    "pushedAt": "2024-05-18T07:51:51Z",
+    "diskUsage": 437,
+    "description": "Lexicon 2024 Group 4 MVC Project 1 (Garage 2.0)",
+    "commitTotal": 182
+  },
+  {
+    "name": "minimal-api-1",
+    "url": "https://github.com/Sunyam-Lexicon-2024/minimal-api-1",
+    "homepageUrl": null,
+    "pushedAt": "2024-05-18T07:44:57Z",
+    "diskUsage": 6,
+    "description": null,
+    "commitTotal": 3
+  },
+  {
+    "name": "tournaments-api",
+    "url": "https://github.com/Sunyam-Lexicon-2024/tournaments-api",
+    "homepageUrl": "",
+    "pushedAt": "2024-05-23T17:19:42Z",
+    "diskUsage": 445,
+    "description": "A Controller based Web API, using ASP.NET Core, to handle getting, creating and editing information about Tournaments and their corresponding Games.",
+    "commitTotal": 40
+  },
+  {
     "name": "oop-basics-extras-1",
     "url": "https://github.com/Sunyam-Lexicon-2024/oop-basics-extras-1",
     "homepageUrl": "",
@@ -39,27 +66,9 @@
     "name": ".github",
     "url": "https://github.com/Sunyam-Lexicon-2024/.github",
     "homepageUrl": null,
-    "pushedAt": "2024-04-11T12:50:08Z",
-    "diskUsage": 2,
+    "pushedAt": "2024-04-17T09:42:40Z",
+    "diskUsage": 3,
     "description": "Organization Resources Repository",
-    "commitTotal": 2
-  },
-  {
-    "name": "memory-management",
-    "url": "https://github.com/Sunyam-Lexicon-2024/memory-management",
-    "homepageUrl": "",
-    "pushedAt": "2024-04-10T07:32:32Z",
-    "diskUsage": 64,
-    "description": "A small exercise in C# memory management",
-    "commitTotal": 3
-  },
-  {
-    "name": "oop-basics-extras-2",
-    "url": "https://github.com/Sunyam-Lexicon-2024/oop-basics-extras-2",
-    "homepageUrl": "",
-    "pushedAt": "2024-04-10T07:34:29Z",
-    "diskUsage": 7,
-    "description": "Some small extra tests for OOP in C#, part deux!",
     "commitTotal": 3
   },
   {
@@ -72,21 +81,12 @@
     "commitTotal": 24
   },
   {
-    "name": "garage-1.0",
-    "url": "https://github.com/Sunyam-Lexicon-2024/garage-1.0",
+    "name": "oop-basics-extras-2",
+    "url": "https://github.com/Sunyam-Lexicon-2024/oop-basics-extras-2",
     "homepageUrl": "",
-    "pushedAt": "2024-04-10T07:29:59Z",
-    "diskUsage": 2318,
-    "description": "A small application for handling registration, deregistration and data of Vehicles stored in select Garages.",
-    "commitTotal": 5
-  },
-  {
-    "name": "oop-basics",
-    "url": "https://github.com/Sunyam-Lexicon-2024/oop-basics",
-    "homepageUrl": "",
-    "pushedAt": "2024-04-10T07:33:45Z",
+    "pushedAt": "2024-04-10T07:34:29Z",
     "diskUsage": 7,
-    "description": "Some small extra tests for OOP in C#",
+    "description": "Some small extra tests for OOP in C#, part deux!",
     "commitTotal": 3
   }
 ]
