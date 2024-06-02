@@ -1,4 +1,4 @@
-#! /usr/bin/zsh
+#! /bin/zsh
 token=$(echo $GITHUB_ADMIN_ACCESS | base64 -d)
 
 query=$(cat query.gql | tr -d '\n')

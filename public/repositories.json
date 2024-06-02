@@ -1,10 +1,19 @@
 [
   {
-    "name": "mvc-1",
-    "url": "https://github.com/Sunyam-Lexicon-2024/mvc-1",
+    "name": "aspnet-tournaments-web-api",
+    "url": "https://github.com/Sunyam-Lexicon-2024/aspnet-tournaments-web-api",
     "homepageUrl": "",
-    "pushedAt": "2024-05-18T07:52:19Z",
-    "diskUsage": 31805,
+    "pushedAt": "2024-06-06T19:38:47Z",
+    "diskUsage": 2335,
+    "description": "A Controller based Web API, using ASP.NET Core, to handle getting, creating and editing information about Tournaments and their corresponding Games.",
+    "commitTotal": 77
+  },
+  {
+    "name": "aspnet-mvc",
+    "url": "https://github.com/Sunyam-Lexicon-2024/aspnet-mvc",
+    "homepageUrl": "",
+    "pushedAt": "2024-06-04T20:33:21Z",
+    "diskUsage": 32083,
     "description": "A basic ASP.NET Core 8.0 MVC application",
     "commitTotal": 17
   },
@@ -12,55 +21,55 @@
     "name": "frontend-api",
     "url": "https://github.com/Sunyam-Lexicon-2024/frontend-api",
     "homepageUrl": "https://sunyam-lexicon-2024.github.io/frontend-api/",
-    "pushedAt": "2024-04-10T07:28:11Z",
-    "diskUsage": 164,
+    "pushedAt": "2024-06-04T20:34:25Z",
+    "diskUsage": 585,
     "description": "A small frontend to test API interaction",
     "commitTotal": 13
   },
   {
-    "name": "personell-registry-app",
-    "url": "https://github.com/Sunyam-Lexicon-2024/personell-registry-app",
-    "homepageUrl": "",
-    "pushedAt": "2024-04-10T07:30:34Z",
-    "diskUsage": 3,
-    "description": "A small application built to simulate registration of personell",
-    "commitTotal": 2
+    "name": "aspnet-minimal-web-api",
+    "url": "https://github.com/Sunyam-Lexicon-2024/aspnet-minimal-web-api",
+    "homepageUrl": null,
+    "pushedAt": "2024-06-04T20:33:09Z",
+    "diskUsage": 90,
+    "description": null,
+    "commitTotal": 3
   },
   {
     "name": "garage-2.0",
     "url": "https://github.com/Sunyam-Lexicon-2024/garage-2.0",
     "homepageUrl": "",
-    "pushedAt": "2024-05-18T07:51:51Z",
-    "diskUsage": 437,
+    "pushedAt": "2024-06-04T20:33:32Z",
+    "diskUsage": 893,
     "description": "Lexicon 2024 Group 4 MVC Project 1 (Garage 2.0)",
     "commitTotal": 182
   },
   {
-    "name": "minimal-api-1",
-    "url": "https://github.com/Sunyam-Lexicon-2024/minimal-api-1",
+    "name": "personell-registry-manager",
+    "url": "https://github.com/Sunyam-Lexicon-2024/personell-registry-manager",
+    "homepageUrl": "",
+    "pushedAt": "2024-06-04T20:35:33Z",
+    "diskUsage": 119,
+    "description": "A small application built to simulate registration of personell",
+    "commitTotal": 3
+  },
+  {
+    "name": "blazor-machine-park",
+    "url": "https://github.com/Sunyam-Lexicon-2024/blazor-machine-park",
     "homepageUrl": null,
-    "pushedAt": "2024-05-18T07:44:57Z",
-    "diskUsage": 6,
+    "pushedAt": "2024-06-17T08:23:38Z",
+    "diskUsage": 1062,
     "description": null,
-    "commitTotal": 3
+    "commitTotal": 121
   },
   {
-    "name": "tournaments-api",
-    "url": "https://github.com/Sunyam-Lexicon-2024/tournaments-api",
-    "homepageUrl": "",
-    "pushedAt": "2024-05-23T17:19:42Z",
-    "diskUsage": 445,
-    "description": "A Controller based Web API, using ASP.NET Core, to handle getting, creating and editing information about Tournaments and their corresponding Games.",
-    "commitTotal": 40
-  },
-  {
-    "name": "oop-basics-extras-1",
-    "url": "https://github.com/Sunyam-Lexicon-2024/oop-basics-extras-1",
-    "homepageUrl": "",
-    "pushedAt": "2024-04-10T07:34:10Z",
-    "diskUsage": 3,
-    "description": "Some small extra tests for OOP in C#",
-    "commitTotal": 3
+    "name": "lms",
+    "url": "https://github.com/Sunyam-Lexicon-2024/lms",
+    "homepageUrl": null,
+    "pushedAt": "2024-06-26T13:12:53Z",
+    "diskUsage": 907,
+    "description": null,
+    "commitTotal": 136
   },
   {
     "name": ".github",
@@ -72,21 +81,12 @@
     "commitTotal": 3
   },
   {
-    "name": "frontend-javascript",
-    "url": "https://github.com/Sunyam-Lexicon-2024/frontend-javascript",
-    "homepageUrl": "https://sunyam-lexicon-2024.github.io/frontend-javascript/",
-    "pushedAt": "2024-04-10T07:28:48Z",
-    "diskUsage": 309,
-    "description": "A small frontend to test JavaScript",
-    "commitTotal": 24
-  },
-  {
-    "name": "oop-basics-extras-2",
-    "url": "https://github.com/Sunyam-Lexicon-2024/oop-basics-extras-2",
+    "name": "oop-basics-extras-1",
+    "url": "https://github.com/Sunyam-Lexicon-2024/oop-basics-extras-1",
     "homepageUrl": "",
-    "pushedAt": "2024-04-10T07:34:29Z",
-    "diskUsage": 7,
-    "description": "Some small extra tests for OOP in C#, part deux!",
+    "pushedAt": "2024-06-04T20:35:17Z",
+    "diskUsage": 254,
+    "description": "Some small extra tests for OOP in C#",
     "commitTotal": 3
   }
 ]

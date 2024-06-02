@@ -41,6 +41,7 @@
     <li>
       <a href="#about-the-project">About The Project</a>
       <ul>
+        <li><a href="#site-link">Site Link</a></li>
         <li><a href="#built-with">Built With</a></li>
         <li><a href="#current-status">Curren Status</a></li>
       </ul>
@@ -56,7 +57,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-![![Suny-Am Lexicon 2024 Web Portal Screen Shot][controller-web-api-screenshot]](.docs/images/screenshot.png)
+![![Suny-Am Lexicon 2024 Web Portal Screen Shot][product-screenshot]](.docs/images/screenshot.png)
 
 The web portal project for studies carried out at [Lexicon AB](https://lexicon.se) 2024
 
@@ -64,14 +65,19 @@ The web portal project for studies carried out at [Lexicon AB](https://lexicon.s
 
 
 
+### Site Link
+
+[Landingpage](https://sunyam-lexicon-2024.github.io/web-portal/)
+
+<p align="right"><a href="#readme-top">🔝</a></p>
+
 ### Built With
 
-[![Vue.js][Vue.js]][Vue-url]
+[![React.js][React.js]][React-url]
 [![Vite][Vite]][Vite-url]
 <br>
 [![Bun][Bun]][Bun-url]
 [![Podman][Podman]][Podman-url]
-
 
 <p align="right"><a href="#readme-top">🔝</a></p>
 
@@ -83,7 +89,6 @@ The web portal project for studies carried out at [Lexicon AB](https://lexicon.s
 [![Deployment](https://github.com/Sunyam-Lexicon-2024/web-portal/actions/workflows/publish.yml/badge.svg)](https://github.com/Sunyam-Lexicon-2024/web-portal/actions/workflows/publish.yml)
 
 <p align="right"><a href="#readme-top">🔝</a></p>
-
 
 
 
@@ -123,8 +128,8 @@ Your Name - [@sunyam.bsky.social](https://bsky.app/profile/sunyam.bsky.social) -
 [.NET-url]: https://dotnet.microsoft.com/
 [Podman]: https://img.shields.io/badge/podman-000000?style=for-the-badge&logo=podman&logoColor=white&logoSize=large&color=892CA0
 [Podman-url]:https://podman.io
-[Vue.js]: https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vuedotjs&logoColor=4FC08D
-[Vue-url]: https://vuejs.org/
+[React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
+[React-url]: https://reactjs.org/
 [Vite]: https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white
 [Vite-url]: https://vitejs.dev/
 [Bun]: https://img.shields.io/badge/Bun-%23000000.svg?style=for-the-badge&logo=bun&logoColor=white
